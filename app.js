@@ -1,10 +1,19 @@
+//En el archivo app., implementa la sintaxis de servidor Express y 
+//las rutas /books y /authors para la petición “get”.
+
 const express = require('express');
 const app = express();
 const port = 3000;
 
-app.get("/", (req, res) => {
-  res.status(200).json({
-     message: 'Hello World' 
+const booksRoutes = require("./routes/books");
+const authorsRoutes = require("./routes/authors");
+
+app.use('/books', booksRoutes);
+app.use('/authors', authorsRoutes);
+
+app.use("/", (req, res) => {
+  res.status(404).json({
+     message: "Incorrect route or params" 
     });
 });
 

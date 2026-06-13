@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon app",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest app.test.js"
   },
   "keywords": [],
   "author": "",
@@ -15,6 +15,8 @@
     "mongoose": "^9.7.0"
   },
   "devDependencies": {
-    "nodemon": "^3.1.14"
+    "jest": "^30.4.2",
+    "nodemon": "^3.1.14",
+    "supertest": "^7.2.2"
   }
 }

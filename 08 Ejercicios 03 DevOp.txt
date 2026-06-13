@@ -1,0 +1,18 @@
+08 Ejercicios 03 DevOp
+
+1cl npm init-y
+2- npm install nodemon --save-dev
+3- npm install express
+4- npm install mongoose --save
+5- "scripts": {
+    "start": "nodemon app",
+6- arcivo app.js
+5- archivo .gitignore (dentro node_modules/)
+
+git init
+git add -A
+git commit -m "initial"
+git branch -M main
+git remote add origin https://github.com/davidcarbajalred/devOpEjercicio3.git
+git push -u origin main                                   
+
